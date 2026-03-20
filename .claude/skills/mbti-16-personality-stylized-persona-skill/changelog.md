@@ -1,32 +1,35 @@
-# 更新日志 (Changelog)
+# 更新履歴 (Changelog)
 
-所有关于 `openclaw-16mbti` Skill 的重要变动均记录于此。本日志遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/) 规范，采用[语义化版本控制](https://semver.org/lang/zh-CN/)。
+`openclaw-16mbti` Skill に関するすべての重要な変更はここに記録されます。本ログは [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/) 規範に従い、[セマンティックバージョニング](https://semver.org/lang/zh-CN/)を採用しています。
 
 ## [Unreleased]
 
-- 等待上机测试与 prompt 微调反馈。
+- 実機テストとプロンプト微調整のフィードバック待ち。
 
 ---
 
 ## [1.0.0] - 2026-03-09
 
-### Added (新增)
-- **核心逻辑接入 (SKILL.md)**：完成了中枢调用文件的设计，支持对 `task_mode` 和 `output_style` 的精确识别。
-- **三种输出模式路由**：
-  - 【单流派设定】 `single`
-  - 【极性推演对立】 `compare`
-  - 【系统智能发牌】 `recommend`
-- **红线与免责阻断机制**：在配置文件底层强制写死“反医疗诊断”、“反招聘筛选”的高优阻断逻辑。
-- **全系角色组件包 (profiles/)**：
-  - NT 架构组 (INTJ, INTP, ENTJ, ENTP)
-  - NF 价值组 (INFJ, INFP, ENFJ, ENFP)
-  - SJ 稳健组 (ISTJ, ISFJ, ESTJ, ESFJ)
-  - SP 临场组 (ISTP, ISFP, ESTP, ESFP)
-- **机器可读索引配置**：生成了 `03_personality_profiles.json` 与 `.yaml` 以供外部流程调用。
-- **配套帮助文档**：创建了 `README.md`，使用案例说明 `examples.md`，出厂测试验证标准 `tests.md`。
+### Added (追加)
 
-### Changed (变更)
-- *无 (首次发布)*
+- **コアロジック接続 (SKILL.md)**：中枢呼び出しファイルの設計を完了し、`task_mode` と `output_style` の正確な識別をサポート。
+- **3種類の出力モードルーティング**：
+  - 【単一流派設定】 `single`
+  - 【極性推論対立】 `compare`
+  - 【システム知能配牌】 `recommend`
+- **レッドラインと免責ブロック機構**：設定ファイルの下層に「反医療診断」、「反採用選考」の高優先度ブロックロジックを強制的に組み込み。
+- **全系キャラクターコンポーネントパッケージ (profiles/)**：
+  - NT アーキテクチャグループ (INTJ, INTP, ENTJ, ENTP)
+  - NF 価値グループ (INFJ, INFP, ENFJ, ENFP)
+  - SJ 安定グループ (ISTJ, ISFJ, ESTJ, ESFJ)
+  - SP 臨機グループ (ISTP, ISFP, ESTP, ESFP)
+- **機械可読インデックス設定**：外部プロセス呼び出し用に `03_personality_profiles.json` と `.yaml` を生成。
+- **付属ヘルプドキュメント**：`README.md`、使用例説明 `examples.md`、出荷テスト検証基準 `tests.md` を作成。
 
-### Fixed (修复)
-- *无 (首次发布)*
+### Changed (変更)
+
+- *なし (初回リリース)*
+
+### Fixed (修正)
+
+- *なし (初回リリース)*
